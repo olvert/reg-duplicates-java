@@ -1,11 +1,4 @@
-import structure.RegBST;
-import structure.RegHash;
-import structure.RegStructure;
-
 import java.io.*;
-import java.text.SimpleDateFormat;
-import java.util.Date;
-import java.util.Scanner;
 
 /**
  * Created by ollesvensson on 08/10/16.
@@ -18,7 +11,7 @@ public class Main {
 
         String filePath = args[0];
         Boolean duplicates = RegSolver.solve(filePath);
-        String result = duplicates ? "Dubbletter." : "Ej dubbletter";
+        String result = duplicates ? "Dubbletter" : "Ej dubbletter";
         System.out.println(result);
 
         long end = System.nanoTime();

@@ -1,0 +1,51 @@
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.github.jengelman.gradle.plugins:shadow:1.2.3'
+    }
+}
+
+apply plugin: 'com.github.johnrengelman.shadow'
+
+apply plugin: 'idea'
+apply plugin: 'java'
+
+sourceSets {
+  main {
+      java {
+         srcDir 'src'
+      }
+   }
+  
+   test {
+      java {
+         srcDir 'test'
+      }
+   }
+}
+
+repositories {
+   mavenCentral()
+}
+
+dependencies {
+   compile group: 'net.sf.trove4j', name: 'trove4j', version: '3.0.3'
+}
+
+jar {
+   manifest {
+      attributes 'Main-Class': 'Main'
+   }
+}
+
+jar {
+    manifest {
+        attributes 'Main-Class': 'Main'
+    }
+
+    from {
+        configurations.compile.collect { it.isDirectory() ? it : zipTree(it) }
+    }
+}

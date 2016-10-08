@@ -6,16 +6,17 @@ all:
 	make build
 	make run0
 
-build: Main.java
-	javac Main.java
-
+build:
+	gradle assemble
+	gradle build
+	
 run0:
-	java Main $(FILEPATH0)
+	java -jar build/libs/reg-duplicates.jar $(FILEPATH0)
 
 run1:
-	java Main $(FILEPATH1)
+	java -jar build/libs/reg-duplicates.jar $(FILEPATH1)
 
 run2:
-	java Main $(FILEPATH2)
+	java -jar build/libs/reg-duplicates.jar $(FILEPATH2)
 
 

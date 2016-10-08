@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/reg-duplicates.iml" filepath="$PROJECT_DIR$/reg-duplicates.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/reg-duplicates.iml" filepath="$PROJECT_DIR$/.idea/modules/reg-duplicates.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/reg-duplicates_main.iml" filepath="$PROJECT_DIR$/.idea/modules/reg-duplicates_main.iml" group="reg-duplicates" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/reg-duplicates_test.iml" filepath="$PROJECT_DIR$/.idea/modules/reg-duplicates_test.iml" group="reg-duplicates" />
     </modules>
   </component>
 </project>

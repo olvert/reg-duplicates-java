@@ -1,21 +1,9 @@
 # ABOUT
-
 ???
+# MISC
 
+http://java-performance.info/hashmap-overview-jdk-fastutil-goldman-sachs-hppc-koloboke-trove-january-2015/
 # MEASURES
-
-## VERSION 0.1
-
-Using BufferReader for input and simple unconfigured HashSet storage and 
-duplicate check.
-
-Measures:
-
-| File          | Time          |
-|:-------------:|:-------------:|
-| Rgn00.txt     | ~ 230ms       |
-| Rgn01.txt     | ~ 6000ms      |
-| Rgn02.txt     | ~ 6000ms      |
 
 ## VERSION 0.2
 
@@ -30,3 +18,16 @@ Measures:
 | Rgn00.txt     | ~ 190ms       |
 | Rgn01.txt     | ~ 1500ms      |
 | Rgn02.txt     | ~ 1580ms      |
+
+## VERSION 0.1
+
+Using BufferReader for input and simple unconfigured HashSet storage and 
+duplicate check.
+
+Measures:
+
+| File          | Time          |
+|:-------------:|:-------------:|
+| Rgn00.txt     | ~ 230ms       |
+| Rgn01.txt     | ~ 6000ms      |
+| Rgn02.txt     | ~ 6000ms      |
